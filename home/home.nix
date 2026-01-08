@@ -50,11 +50,11 @@
     go
   ];
   home.file.".config" = {
-    source = ./dotfiles;
+    source = ../dotfiles;
     recursive = true;
   };
   home.file.".config/fish" = {
-    source = ./dotfiles/fish;
+    source = ../dotfiles/fish;
     recursive = true;
   };
   home.file.".local/PrismLauncher/themes/Wallust" = {
