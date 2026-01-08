@@ -1,0 +1,7 @@
+[general]
+import = [
+    "~/.config/alacritty/theme.toml"
+]
+
+[terminal]
+shell = "fish"

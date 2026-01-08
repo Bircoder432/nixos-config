@@ -1,0 +1,125 @@
+/* ================================
+   Waybar + Wallust (solid / compact)
+   ================================ */
+
+@define-color bg {{ background }};
+@define-color fg {{ foreground }};
+@define-color accent {{ color4 }};
+@define-color warn {{ color1 }};
+@define-color muted {{ color8 }};
+
+/* ---------- Base ---------- */
+
+* {
+    font-family: JetBrainsMono;
+    font-size: 14px;
+    font-weight: 700;
+
+    color: @fg;
+    background: transparent;
+
+    border: none;
+    padding: 2px 6px;
+}
+
+/* ---------- Bar ---------- */
+
+window#waybar {
+    background: @bg;
+    border-radius: 10px;
+
+    /* отступ от краёв экрана */
+    margin: 4px 6px;
+
+    padding: 2px 4px;
+    border: 2px solid @accent;
+}
+
+/* ---------- Module groups ---------- */
+
+#workspaces,
+#waybar-niri-window,
+#windows,
+#clock {
+    font-weight: bold;
+}
+#tray,
+#pulseaudio,
+#custom-keyboard,
+#custom-media,
+#network {
+    background: @bg;
+    margin: 0 4px;
+    padding: 1px 4px;
+    border-radius: 8px;
+}
+
+/* ---------- Workspaces ---------- */
+#workspaces {
+    background: transparent;
+    border: @accent;
+    border-radius: 6px;
+    margin: 0 1px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @muted;
+    border: @accent;
+    margin: 0 1px;
+    padding: 1px 6px;
+    border-radius: 6px;
+    transition: background-color 120ms ease, color 120ms ease;
+}
+
+#workspaces button:hover {
+    background: @bg;
+    color: @fg;
+}
+
+#workspaces button.focused {
+    background: @accent;
+    color: @bg;
+    font-weight: 600;
+}
+
+#workspaces button.urgent {
+    background: @warn;
+    color: @bg;
+    font-weight: 600;
+}
+
+/* ---------- Window title ---------- */
+
+#waybar-niri-window {
+    opacity: 0.85;
+}
+
+/* ---------- Clock ---------- */
+
+#clock {
+    color: @accent;
+    font-weight: 600;
+}
+
+/* ---------- Audio ---------- */
+
+#pulseaudio.muted {
+    color: @muted;
+}
+
+/* ---------- Tray ---------- */
+
+#tray > .needs-attention {
+    background: @warn;
+    color: @bg;
+}
+
+/* ---------- Tooltip ---------- */
+
+tooltip {
+    background: @bg;
+    color: @fg;
+    border-radius: 8px;
+    padding: 6px;
+}

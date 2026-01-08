@@ -1,0 +1,21 @@
+{
+  "colors": {
+    "AlternateBase": "{{color0}}",
+    "Base": "{{background}}",
+    "BrightText": "{{color1}}",
+    "Button": "{{background}}",
+    "ButtonText": "{{foreground}}",
+    "Highlight": "{{color2}}",
+    "HighlightedText": "{{foreground}}",
+    "Link": "{{color4}}",
+    "Text": "{{foreground}}",
+    "ToolTipBase": "{{foreground}}",
+    "ToolTipText": "{{background}}",
+    "Window": "{{background}}",
+    "WindowText": "{{foreground}}",
+    "fadeAmount": 0.5,
+    "fadeColor": "{{color8}}"
+  },
+  "name": "Wallust",
+  "widgets": "Fusion"
+}

@@ -1,0 +1,61 @@
+# btop theme (wallust template)
+
+# Основной фон и текст
+theme[main_bg]="{{background}}"
+theme[main_fg]="{{foreground}}"
+
+# Цвета акцентов / выделения — будем использовать color0..15
+theme[title]="{{color7}}"        # заголовки
+theme[hi_fg]="{{color4}}"        # выделение / shortcuts
+theme[selected_bg]="{{color0}}"  # фон выбранного процесса
+theme[selected_fg]="{{color4}}"  # текст выбранного процесса
+theme[inactive_fg]="{{color8}}"  # неактивный текст
+theme[graph_text]="{{foreground}}"
+theme[meter_bg]="{{color0}}"
+theme[proc_misc]="{{foreground}}"
+
+# Box outlines
+theme[cpu_box]="{{color5}}"   # Mauve
+theme[mem_box]="{{color2}}"   # Green
+theme[net_box]="{{color1}}"   # Maroon
+theme[proc_box]="{{color4}}"  # Blue
+
+# Divider line
+theme[div_line]="{{color8}}"
+
+# Graphs (для простоты: берем разные цвета из color0..15)
+theme[temp_start]="{{color2}}"
+theme[temp_mid]="{{color3}}"
+theme[temp_end]="{{color1}}"
+
+theme[cpu_start]="{{color6}}"
+theme[cpu_mid]="{{color5}}"
+theme[cpu_end]="{{color7}}"
+
+theme[free_start]="{{color5}}"
+theme[free_mid]="{{color6}}"
+theme[free_end]="{{color4}}"
+
+theme[cached_start]="{{color6}}"
+theme[cached_mid]="{{color4}}"
+theme[cached_end]="{{color7}}"
+
+theme[available_start]="{{color3}}"
+theme[available_mid]="{{color1}}"
+theme[available_end]="{{color1}}"
+
+theme[used_start]="{{color2}}"
+theme[used_mid]="{{color6}}"
+theme[used_end]="{{color4}}"
+
+theme[download_start]="{{color3}}"
+theme[download_mid]="{{color1}}"
+theme[download_end]="{{color1}}"
+
+theme[upload_start]="{{color2}}"
+theme[upload_mid]="{{color6}}"
+theme[upload_end]="{{color4}}"
+
+theme[process_start]="{{color6}}"
+theme[process_mid]="{{color7}}"
+theme[process_end]="{{color5}}"

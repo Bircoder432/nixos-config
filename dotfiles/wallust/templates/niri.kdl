@@ -1,0 +1,18 @@
+layout {
+    focus-ring {
+        active-color "{{ color4 }}"
+        inactive-color "{{ color8 }}"
+    }
+
+    border {
+        off
+        width 2
+        active-color "{{ color5 }}"
+        inactive-color "{{ color8 }}"
+        urgent-color "{{ color1 }}"
+    }
+
+    shadow {
+        color "{{ color0 }}"
+    }
+}

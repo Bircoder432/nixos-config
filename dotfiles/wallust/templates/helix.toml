@@ -1,0 +1,131 @@
+# ~/.config/helix/themes/wallust.toml
+# Генерируется через: wallust run helix
+
+"attribute" = "{{color15}}"
+
+"type" = "{{color15}}"
+"type.enum.variant" = "{{color14}}"
+
+"constructor" = "{{color13}}"
+
+"constant" = "{{color11}}"
+"constant.character" = "{{color14}}"
+"constant.character.escape" = "{{color9}}"
+
+"string" = "{{color10}}"
+"string.regexp" = "{{color9}}"
+"string.special" = "{{color12}}"
+"string.special.symbol" = "{{color1}}"
+
+"comment" = { fg = "{{color7}}", modifiers = ["italic"] }
+
+"variable" = "{{foreground}}"
+"variable.parameter" = { fg = "{{color5}}", modifiers = ["italic"] }
+"variable.builtin" = "{{color1}}"
+"variable.other.member" = "{{color12}}"
+
+"label" = "{{color13}}" # used for lifetimes
+
+"punctuation" = "{{color7}}"
+"punctuation.special" = "{{color6}}"
+
+"keyword" = "{{color4}}"
+"keyword.control.conditional" = { fg = "{{color4}}", modifiers = ["italic"] }
+
+"operator" = "{{color6}}"
+
+"function" = "{{color12}}"
+"function.macro" = "{{color15}}"
+
+"tag" = "{{color12}}"
+
+"namespace" = { fg = "{{color15}}", modifiers = ["italic"] }
+
+"special" = "{{color12}}" # fuzzy highlight
+
+"markup.heading.1" = "{{color1}}"
+"markup.heading.2" = "{{color11}}"
+"markup.heading.3" = "{{color15}}"
+"markup.heading.4" = "{{color10}}"
+"markup.heading.5" = "{{color13}}"
+"markup.heading.6" = "{{color8}}"
+"markup.list" = "{{color14}}"
+"markup.list.unchecked" = "{{color7}}"
+"markup.list.checked" = "{{color10}}"
+"markup.bold" = { fg = "{{color1}}", modifiers = ["bold"] }
+"markup.italic" = { fg = "{{color1}}", modifiers = ["italic"] }
+"markup.link.url" = { fg = "{{color12}}", modifiers = ["italic", "underlined"] }
+"markup.link.text" = "{{color8}}"
+"markup.link.label" = "{{color13}}"
+"markup.raw" = "{{color10}}"
+"markup.quote" = "{{color9}}"
+
+"diff.plus" = "{{color10}}"
+"diff.minus" = "{{color1}}"
+"diff.delta" = "{{color12}}"
+
+# User Interface
+# --------------
+"ui.background" = { fg = "{{foreground}}", bg = "{{background}}" }
+
+"ui.linenr" = { fg = "{{color8}}" }
+"ui.linenr.selected" = { fg = "{{color8}}" }
+
+"ui.statusline" = { fg = "{{color7}}", bg = "{{color0}}" }
+"ui.statusline.inactive" = { fg = "{{color8}}", bg = "{{color0}}" }
+"ui.statusline.normal" = { fg = "{{background}}", bg = "{{color15}}", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "{{background}}", bg = "{{color10}}", modifiers = ["bold"]  }
+"ui.statusline.select" = { fg = "{{background}}", bg = "{{color8}}", modifiers = ["bold"]  }
+
+"ui.popup" = { fg = "{{foreground}}", bg = "{{color8}}" }
+"ui.window" = { fg = "{{color0}}" }
+"ui.help" = { fg = "{{color7}}", bg = "{{color8}}" }
+
+"ui.bufferline" = { fg = "{{color7}}", bg = "{{color0}}" }
+"ui.bufferline.active" = { fg = "{{color4}}", bg = "{{background}}", underline = { color = "{{color4}}", style = "line" } }
+"ui.bufferline.background" = { bg = "{{color0}}" }
+
+"ui.text" = "{{foreground}}"
+"ui.text.focus" = { fg = "{{foreground}}", bg = "{{color8}}", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "{{color7}}" }
+"ui.text.directory" = { fg = "{{color12}}" }
+
+"ui.virtual" = "{{color7}}"
+"ui.virtual.ruler" = { bg = "{{color8}}" }
+"ui.virtual.indent-guide" = "{{color8}}"
+"ui.virtual.inlay-hint" = { fg = "{{color8}}", bg = "{{color0}}" }
+"ui.virtual.jump-label" = { fg = "{{color15}}", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "{{color8}}" }
+
+"ui.cursor" = { fg = "{{background}}", bg = "{{cursor}}" }
+"ui.cursor.primary" = { fg = "{{background}}", bg = "{{color15}}" }
+"ui.cursor.match" = { fg = "{{color11}}", modifiers = ["bold"] }
+
+"ui.cursor.primary.normal" = { fg = "{{background}}", bg = "{{color15}}" }
+"ui.cursor.primary.insert" = { fg = "{{background}}", bg = "{{color10}}" }
+"ui.cursor.primary.select" = { fg = "{{background}}", bg = "{{color8}}" }
+
+"ui.cursor.normal" = { fg = "{{background}}", bg = "{{cursor}}" }
+"ui.cursor.insert" = { fg = "{{background}}", bg = "{{cursor}}" }
+"ui.cursor.select" = { fg = "{{background}}", bg = "{{cursor}}" }
+
+"ui.cursorline.primary" = { bg = "{{color8}}" }
+
+"ui.highlight" = { bg = "{{color8}}", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "{{color7}}", bg = "{{color8}}" }
+"ui.menu.selected" = { fg = "{{foreground}}", bg = "{{color8}}", modifiers = ["bold"] }
+
+"diagnostic.error" = { underline = { color = "{{color1}}", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "{{color15}}", style = "curl" } }
+"diagnostic.info" = { underline = { color = "{{color6}}", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "{{color14}}", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+error = "{{color1}}"
+warning = "{{color15}}"
+info = "{{color6}}"
+hint = "{{color14}}"
+
+rainbow = ["{{color1}}", "{{color11}}", "{{color15}}", "{{color10}}", "{{color13}}", "{{color8}}"]

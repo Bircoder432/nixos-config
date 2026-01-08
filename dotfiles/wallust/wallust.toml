@@ -1,0 +1,37 @@
+check_contrast = true
+palette = "harddark"
+
+
+[templates]
+alacritty.src = "alacritty.toml"
+alacritty.dst = "~/.config/alacritty/theme.toml"
+niri.src = "niri.kdl"
+niri.dst = "~/.config/niri/colors.kdl"
+waybar.src = "waybar.css"
+waybar.dst = "~/.config/waybar/style.css"
+fuzzel.src = "fuzzel.ini"
+fuzzel.dst = "~/.config/fuzzel/fuzzel.ini"
+zed.src = "zed.json"
+zed.dst = "~/.config/zed/themes/wallust.json"
+mako.src = "mako"
+mako.dst = "~/.config/mako/config"
+helix.src = "helix.toml"
+helix.dst = "~/.config/helix/themes/wallust.toml"
+gtk3.src = "gtk3.css"
+gtk3.dst = "~/.themes/Wallust/gtk-3.0/gtk.css"
+gtk4.src = "gtk4.css"
+gtk4.dst = "~/.themes/Wallust/gtk-4.0/gtk.css"
+prism.src = "prism.json"
+prism.dst = "~/.local/share/PrismLauncher/themes/Wallust/theme.json"
+btop.src = "btop.theme"
+btop.dst = "~/.config/btop/theme/wallust.theme"
+
+[templates.cava]
+src = "cava.toml"
+dst = "~/.config/cava/config"
+
+
+[run]
+after = [
+    "systemctl restart --user  waybar"
+]
