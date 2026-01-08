@@ -1,0 +1,198 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "auto",
+    "color": {
+      "1": "34",
+      "2": "36",
+      "3": "32",
+      "4": "33",
+      "5": "35",
+      "6": "31",
+      "7": "37",
+      "8": "90",
+      "9": "94",
+    },
+    "width": null,
+    "height": null,
+    "padding": {
+      "top": 0,
+      "left": 0,
+      "right": 4,
+    },
+    "printRemaining": true,
+    "preserveAspectRatio": true,
+    "recache": false,
+    "position": "left",
+    "chafa": {
+      "fgOnly": false,
+      "symbols": "block+border+space-wide-inverted",
+    },
+  },
+  "display": {
+    "stat": false,
+    "pipe": false,
+    "showErrors": false,
+    "disableLinewrap": true,
+    "hideCursor": false,
+    "separator": ": ",
+    "brightColor": true,
+    "temp": {
+      "unit": "D",
+      "ndigits": 1,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91",
+      },
+    },
+    "percent": {
+      "type": ["num-color"],
+      "ndigits": 0,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91",
+      },
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "-",
+      },
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+      },
+      "color": {
+        "elapsed": "auto",
+        "total": "97",
+        "border": "97",
+      },
+      "width": 10,
+    },
+    "noBuffer": false,
+  },
+  "general": {
+    "thread": true,
+    "processingTimeout": 5000,
+    "detectVersion": true,
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " ",
+      "keyIcon": "",
+      "fqdn": false,
+    },
+    {
+      "type": "separator",
+      "string": "-",
+      "times": 0,
+    },
+    {
+      "type": "os",
+      "keyIcon": "",
+    },
+    {
+      "type": "host",
+      "keyIcon": "󰌢",
+    },
+    {
+      "type": "kernel",
+      "keyIcon": "",
+    },
+    {
+      "type": "uptime",
+      "keyIcon": "",
+    },
+    {
+      "type": "packages",
+      "keyIcon": "󰏖",
+    },
+    {
+      "type": "shell",
+      "keyIcon": "",
+    },
+    {
+      "type": "cpu",
+      "keyIcon": "",
+    },
+    {
+      "type": "gpu",
+      "keyIcon": "󰾲",
+      "driverSpecific": false,
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "memory",
+      "keyIcon": "",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "swap",
+      "keyIcon": "󰓡",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "disk",
+      "keyIcon": "",
+      "showRegular": true,
+      "showExternal": true,
+      "showReadOnly": true,
+      "hideFolders": "/efi:/boot:/boot/*",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "localip",
+      "keyIcon": "󰩟",
+      "showIpv4": true,
+      "defaultRouteOnly": true,
+    },
+    {
+      "type": "battery",
+      "keyIcon": "",
+      "percent": {
+        "green": 50,
+        "yellow": 20,
+        "type": 0,
+      },
+    },
+    {
+      "type": "poweradapter",
+      "keyIcon": "󰚥",
+    },
+    {
+      "type": "locale",
+      "keyIcon": "",
+    },
+    {
+      "type": "colors",
+      "key": " ",
+      "keyIcon": "",
+      "symbol": "block",
+      "paddingLeft": 0,
+      "block": {
+        "width": 3,
+        "range": [0, 15],
+      },
+    },
+  ],
+}
