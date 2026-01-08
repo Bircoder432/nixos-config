@@ -58,7 +58,7 @@
     recursive = true;
   };
   home.file.".local/PrismLauncher/themes/Wallust" = {
-    source = ./prismlauncher/Wallust;
+    source = ../prismlauncher/Wallust;
     recursive = true;
   };
 

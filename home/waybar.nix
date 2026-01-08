@@ -46,11 +46,12 @@
         ];
 
         modules-right = [
+          "custom/media" # кастомный модуль media
+          "custom/keyboard"
           "pulseaudio"
           "network"
           "tray"
-          "media" # кастомный модуль media
-          "keyboard" # кастомный модуль keyboard
+          # кастомный модуль keyboard
         ];
 
         # -------------------
@@ -86,18 +87,18 @@
         # -------------------
 
         "custom/media" = {
-          format = " {title} - {artist}"; #  — музыка
+          format = "♪ {}"; #  — музыка
           tooltip = "Media player info";
           exec = "${pkgs.playerctl}/bin/playerctl metadata --format '{{title}} - {{artist}}'";
-          interval = 2;
+          interval = 1;
         };
 
         "custom/keyboard" = {
-          format = " {layout}"; #  — иконка клавиатуры Nerd Font
+          format = " {}"; #  — иконка клавиатуры Nerd Font
           tooltip = "Current keyboard layout";
           exec = ''
-            niri msg -j keyboard-layouts | \
-            jq -r '.names[.current_idx]'
+            ${pkgs.niri}/bin/niri msg -j keyboard-layouts | \
+            ${pkgs.jq}/bin/jq -r '.names[.current_idx]'
           '';
           interval = 1;
         };
