@@ -12,7 +12,7 @@
     ./waybar.nix
     ./helix.nix
     ./git.nix
-    ./home/dwrs.nix
+    ./dwrs.nix
   ];
   home.username = "vstor";
 

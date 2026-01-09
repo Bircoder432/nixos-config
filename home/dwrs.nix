@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 
 {
-  imports = [ inputs.dwrs.homeManagerModules.dwrs ];
+  imports = [ inputs.dwrs.homeManagerModules.x86_64-linux.dwrs ];
 
   programs.dwrs.enable = true;
   programs.dwrs.package = inputs.dwrs.packages.${pkgs.system}.dwrs;
