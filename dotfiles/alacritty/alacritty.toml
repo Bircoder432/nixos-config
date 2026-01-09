@@ -3,5 +3,18 @@ import = [
     "~/.config/alacritty/theme.toml"
 ]
 
+[font]
+normal.family = "JetBrains Mono"
+normal.style = "Medium"
+
+bold.family = "JetBrains Mono"
+bold.style = "Bold"
+
+italic.family = "JetBrains Mono"
+italic.style = "Italic"
+
+size = 11.0
+
+
 [terminal]
 shell = "fish"

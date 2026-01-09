@@ -12,7 +12,7 @@
     ./waybar.nix
     ./helix.nix
     ./git.nix
-    #  ./home/dwrs.nix
+    ./home/dwrs.nix
   ];
   home.username = "vstor";
 
@@ -25,6 +25,7 @@
     tree
     fd
     zed-editor
+    helix
     musicpod
     bitwarden-desktop
     telegram-desktop

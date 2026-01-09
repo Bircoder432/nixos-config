@@ -1,198 +1,118 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  GROUPS
+//
+//  by Bina
+
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "auto",
     "source": "auto",
-    "color": {
-      "1": "34",
-      "2": "36",
-      "3": "32",
-      "4": "33",
-      "5": "35",
-      "6": "31",
-      "7": "37",
-      "8": "90",
-      "9": "94",
-    },
-    "width": null,
-    "height": null,
+    "height": 20,
     "padding": {
-      "top": 0,
-      "left": 0,
-      "right": 4,
-    },
-    "printRemaining": true,
-    "preserveAspectRatio": true,
-    "recache": false,
-    "position": "left",
-    "chafa": {
-      "fgOnly": false,
-      "symbols": "block+border+space-wide-inverted",
+      "top": 1,
     },
   },
   "display": {
-    "stat": false,
-    "pipe": false,
-    "showErrors": false,
-    "disableLinewrap": true,
-    "hideCursor": false,
-    "separator": ": ",
-    "brightColor": true,
-    "temp": {
-      "unit": "D",
-      "ndigits": 1,
-      "color": {
-        "green": "32",
-        "yellow": "93",
-        "red": "91",
-      },
-    },
-    "percent": {
-      "type": ["num-color"],
-      "ndigits": 0,
-      "color": {
-        "green": "32",
-        "yellow": "93",
-        "red": "91",
-      },
-    },
-    "bar": {
-      "char": {
-        "elapsed": "■",
-        "total": "-",
-      },
-      "border": {
-        "left": "[ ",
-        "right": " ]",
-      },
-      "color": {
-        "elapsed": "auto",
-        "total": "97",
-        "border": "97",
-      },
-      "width": 10,
-    },
-    "noBuffer": false,
-  },
-  "general": {
-    "thread": true,
-    "processingTimeout": 5000,
-    "detectVersion": true,
+    "separator": " ➜  ",
   },
   "modules": [
-    {
-      "type": "title",
-      "key": " ",
-      "keyIcon": "",
-      "fqdn": false,
-    },
-    {
-      "type": "separator",
-      "string": "-",
-      "times": 0,
-    },
+    "break",
+    "break",
+    "break",
     {
       "type": "os",
-      "keyIcon": "",
-    },
-    {
-      "type": "host",
-      "keyIcon": "󰌢",
+      "key": "OS   ",
+      "keyColor": "31", // = color1
     },
     {
       "type": "kernel",
-      "keyIcon": "",
-    },
-    {
-      "type": "uptime",
-      "keyIcon": "",
+      "key": " ├  ",
+      "keyColor": "31",
     },
     {
       "type": "packages",
-      "keyIcon": "󰏖",
+      "format": "{nix-all} (nixpkgs) {flatpak-all} (flatpak)",
+      "key": " ├ 󰏖 ",
+      "keyColor": "31",
     },
     {
       "type": "shell",
-      "keyIcon": "",
+      "key": " └  ",
+      "keyColor": "31",
+    },
+    "break",
+    {
+      "type": "wm",
+      "key": "WM   ",
+      "keyColor": "32",
+    },
+    {
+      "type": "wmtheme",
+      "key": " ├ 󰉼 ",
+      "keyColor": "32",
+    },
+    {
+      "type": "icons",
+      "key": " ├ 󰀻 ",
+      "keyColor": "32",
+    },
+    {
+      "type": "cursor",
+      "key": " ├  ",
+      "keyColor": "32",
+    },
+    {
+      "type": "terminal",
+      "key": " ├  ",
+      "keyColor": "32",
+    },
+    {
+      "type": "terminalfont",
+      "key": " └  ",
+      "keyColor": "32",
+    },
+    "break",
+    {
+      "type": "host",
+      "format": "{5} {1} Type {2}",
+      "key": "PC   ",
+      "keyColor": "33",
     },
     {
       "type": "cpu",
-      "keyIcon": "",
+      "format": "{1} ({3}) @ {7} GHz",
+      "key": " ├  ",
+      "keyColor": "33",
     },
     {
       "type": "gpu",
-      "keyIcon": "󰾲",
-      "driverSpecific": false,
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0,
-      },
+      "format": "{1} {2} @ {12} GHz",
+      "key": " ├ 󰢮 ",
+      "keyColor": "33",
     },
     {
       "type": "memory",
-      "keyIcon": "",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0,
-      },
+      "key": " ├  ",
+      "keyColor": "33",
     },
     {
       "type": "swap",
-      "keyIcon": "󰓡",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0,
-      },
+      "key": " ├ 󰓡 ",
+      "keyColor": "33",
     },
     {
       "type": "disk",
-      "keyIcon": "",
-      "showRegular": true,
-      "showExternal": true,
-      "showReadOnly": true,
-      "hideFolders": "/efi:/boot:/boot/*",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0,
-      },
+      "key": " ├ 󰋊 ",
+      "keyColor": "33",
     },
     {
-      "type": "localip",
-      "keyIcon": "󰩟",
-      "showIpv4": true,
-      "defaultRouteOnly": true,
+      "type": "monitor",
+      "key": " └  ",
+      "keyColor": "33",
     },
-    {
-      "type": "battery",
-      "keyIcon": "",
-      "percent": {
-        "green": 50,
-        "yellow": 20,
-        "type": 0,
-      },
-    },
-    {
-      "type": "poweradapter",
-      "keyIcon": "󰚥",
-    },
-    {
-      "type": "locale",
-      "keyIcon": "",
-    },
-    {
-      "type": "colors",
-      "key": " ",
-      "keyIcon": "",
-      "symbol": "block",
-      "paddingLeft": 0,
-      "block": {
-        "width": 3,
-        "range": [0, 15],
-      },
-    },
+    "break",
+    "break",
   ],
 }
