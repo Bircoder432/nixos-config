@@ -49,6 +49,7 @@
     zrythm
     wev
     go
+    onlyoffice-desktopeditors
   ];
   home.file.".config" = {
     source = ../dotfiles;

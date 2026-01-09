@@ -106,21 +106,21 @@
         "scrollbar.thumb.border": "transparent",
         "scrollbar.thumb.hover_background": "{{foreground | darken(0.3)}}",
 
-        "success": "{{color2}}",
-        "success.background": "{{background | blend(color2) | darken(0.5)}}",
-        "success.border": "{{color2}}",
+        "error": "#f38ba8",
+        "error.background": "{{background | blend("#f38ba8") | darken(0.5)}}",
+        "error.border": "#f38ba8",
 
-        "warning": "{{color3}}",
-        "warning.background": "{{background | blend(color3) | darken(0.5)}}",
-        "warning.border": "{{color3}}",
+        "warning": "#f9e2af",
+        "warning.background": "{{background | blend("#f9e2af") | darken(0.5)}}",
+        "warning.border": "#f9e2af",
 
-        "error": "{{color1}}",
-        "error.background": "{{background | blend(color1) | darken(0.5)}}",
-        "error.border": "{{color1}}",
+        "success": "#a6e3a1",
+        "success.background": "{{background | blend("#a6e3a1") | darken(0.5)}}",
+        "success.border": "#a6e3a1",
 
-        "info": "{{color4}}",
-        "info.background": "{{background | blend(color4) | darken(0.5)}}",
-        "info.border": "{{color4}}",
+        "info": "#89b4fa",
+        "info.background": "{{background | blend("#89b4fa") | darken(0.5)}}",
+        "info.border": "#89b4fa",
 
         "hint": "{{foreground | darken(0.2)}}",
         "hint.background": "{{background | blend(foreground) | darken(0.7)}}",

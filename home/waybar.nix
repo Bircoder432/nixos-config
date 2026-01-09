@@ -62,6 +62,7 @@
         clock = {
           format = " {:%H:%M:%S}"; #  — Nerd Font clock
           tooltip-format = "{:%A, %d %B}";
+          interval = 1;
         };
 
         # Pulseaudio
