@@ -34,7 +34,7 @@
         layer = "top";
         position = "top";
         height = 40;
-
+        margin = "6 6 6 6";
         modules-left = [
           "niri/workspaces"
           "niri/window"
@@ -119,6 +119,9 @@
           tooltip = "Media player info";
           exec = "${pkgs.playerctl}/bin/playerctl metadata --format '{{title}} - {{artist}}'";
           interval = 1;
+          on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
+          on-scroll-up = "${pkgs.playerctl}/bin/playerctl next";
+          on-scroll-down = "${pkgs.playerctl}/bin/playerctl previous";
         };
 
         "custom/keyboard" = {

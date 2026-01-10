@@ -17,3 +17,7 @@ layout {
         color "{{ color0 }}"
     }
 }
+
+overview {
+    backdrop-color "{{ background }}"
+}

@@ -9,6 +9,6 @@
     msg_template = "{download:green,bold} {url:yellow,bold} → {output:yellow,bold}";
     workers = 3;
     bar_chars = "=>-";
-    template = "{spinner:.green} [{bar:30.cyan/blue}] {pos}/{len} ({percent}%) {msg}";
+    template = "{spinner:.green} [{bar:30.cyan/blue}] ({percent}%) {msg}";
   };
 }

@@ -13,15 +13,22 @@
     ./helix.nix
     ./git.nix
     ./dwrs.nix
+    ./yamusic-tui-enhanced.nix
   ];
   home.username = "vstor";
-
+  
   home.packages = with pkgs; [
+    agenix-cli
     fastfetch
     fish
     rustup
     zig
     gcc
+    nodejs_24
+    bun
+    vue-language-server
+    typescript-language-server
+    typescript
     tree
     fd
     zed-editor
@@ -34,7 +41,6 @@
     nixd
     termusic
     obs-studio
-    steam
     prismlauncher
     luanti
     xonotic

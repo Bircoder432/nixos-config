@@ -11,7 +11,7 @@
 /* ---------- Base ---------- */
 
 * {
-    font-family: JetBrainsMono;
+    font-family: "JetBrainsMono", "Font Awesome 6 Free";
     font-size: 14px;
     font-weight: 700;
 
@@ -24,12 +24,16 @@
 
 /* ---------- Bar ---------- */
 
+#waybar {
+    background: @bg;
+    border-radius: 8px;
+    border: 2px solid @accent;
+    
+}
+
 window#waybar {
     background: @bg;
-    border-radius: 10px;
-
-    /* отступ от краёв экрана */
-    margin: 4px 6px;
+    border-radius: 8px;
 
     padding: 2px 4px;
     border: 2px solid @accent;
@@ -49,7 +53,7 @@ window#waybar {
 #custom-keyboard,
 #custom-media,
 #network {
-    background: @bg;
+    background: transparent;
     margin: 0 4px;
     padding: 1px 4px;
     border-radius: 8px;

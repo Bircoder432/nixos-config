@@ -17,6 +17,7 @@
     fuzzel
     alacritty
     pipewire
+    steam
     pipewire.jack
     pavucontrol
     mako
