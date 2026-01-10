@@ -33,8 +33,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
-        spacing = 6;
+        height = 40;
 
         modules-left = [
           "niri/workspaces"
@@ -46,6 +45,7 @@
         ];
 
         modules-right = [
+          "cava"
           "custom/media" # кастомный модуль media
           "custom/keyboard"
           "pulseaudio"
@@ -58,6 +58,33 @@
         # Настройки модулей
         # -------------------
 
+        cava = {
+          framerate = 30;
+          autosens = 1;
+          bars = 8;
+          source = "auto";
+          method = "pipewire";
+          stereo = true;
+          waves = false;
+          bar_delimiter = 0;
+          lower_cutoff-freq = 50;
+          higher_cutoff_freq = 14000;
+          monstercat = false;
+          input_delay = 2;
+          reverse = false;
+          noise-reduction = 0.33;
+          hide_on_silence = true;
+          format-icons = [
+            "▁"
+            "▂"
+            "▃"
+            "▄"
+            "▅"
+            "▆"
+            "▇"
+            "█"
+          ];
+        };
         # Clock
         clock = {
           format = " {:%H:%M:%S}"; #  — Nerd Font clock

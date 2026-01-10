@@ -27,6 +27,7 @@
     zed-editor
     helix
     musicpod
+    tmux
     bitwarden-desktop
     telegram-desktop
     nil
@@ -47,6 +48,8 @@
     p7zip
     oreo-cursors-plus
     zrythm
+    typst
+    evans
     wev
     go
     onlyoffice-desktopeditors

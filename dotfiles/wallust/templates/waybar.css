@@ -26,11 +26,13 @@
 
 window#waybar {
     background: @bg;
+    border-radius: 10px;
 
-
+    /* отступ от краёв экрана */
+    margin: 4px 6px;
 
     padding: 2px 4px;
-    border-bottom: 2px solid @accent;
+    border: 2px solid @accent;
 }
 
 /* ---------- Module groups ---------- */
@@ -38,12 +40,14 @@ window#waybar {
 #workspaces,
 #waybar-niri-window,
 #windows,
+#cava
 #clock {
     font-weight: bold;
 }
 #tray,
 #pulseaudio,
 #custom-keyboard,
+#custom-media,
 #network {
     background: @bg;
     margin: 0 4px;
@@ -54,48 +58,37 @@ window#waybar {
 /* ---------- Workspaces ---------- */
 #workspaces {
     background: transparent;
+    border: @accent;
+    border-radius: 6px;
     margin: 0 1px;
 }
 
 #workspaces button {
     background: transparent;
+    color: @muted;
+    border: @accent;
     margin: 0 1px;
     padding: 1px 6px;
-    border: none;
-    border-bottom: 2px solid @muted;
-    border-radius: 0;
-
-    outline: none;
-
-    transition:
-        background-color 120ms ease,
-        color 120ms ease,
-        border-bottom-color 120ms ease;
+    border-radius: 6px;
+    transition: background-color 120ms ease, color 120ms ease;
 }
 
-/* hover — лёгкая реакция */
 #workspaces button:hover {
-    border-bottom-color: @accent;
+    background: @bg;
     color: @fg;
 }
 
-/* ВЫБРАННЫЙ ВОРКСПЕЙС */
 #workspaces button.focused {
     background: @accent;
     color: @bg;
     font-weight: 600;
-
-    border-bottom-color: transparent;
 }
 
-/* срочный */
 #workspaces button.urgent {
     background: @warn;
-    color: @fg;
+    color: @bg;
     font-weight: 600;
-    border-bottom-color: @warn;
 }
-
 
 /* ---------- Window title ---------- */
 

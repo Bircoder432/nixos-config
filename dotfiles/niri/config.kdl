@@ -45,7 +45,7 @@ output "eDP-1" {
 }
 prefer-no-csd true
 layout {
-    gaps 16
+    gaps 8
 
    center-focused-column "never"
 
@@ -65,7 +65,6 @@ layout {
 
 
     struts {
-
 
 
 
@@ -105,7 +104,7 @@ window-rule {
 
 
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 8
     clip-to-geometry true
 }
 binds {
