@@ -45,6 +45,7 @@
         ];
 
         modules-right = [
+          "custom/lessons"
           "cava"
           "custom/media" # кастомный модуль media
           "custom/keyboard"
@@ -122,6 +123,13 @@
           on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
           on-scroll-up = "${pkgs.playerctl}/bin/playerctl next";
           on-scroll-down = "${pkgs.playerctl}/bin/playerctl previous";
+        };
+
+        "custom/lessons" = {
+          format = "{}";
+          exec = "/etc/profiles/per-user/vstor/bin/lessons";
+          interval = 60;
+          tooltip = false;
         };
 
         "custom/keyboard" = {

@@ -2,13 +2,14 @@
   description = "Vstor NixOS flake";
 
   inputs = {
-    
+
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
+    osatui.url = "github:Bircoder432/osatui";
     dwrs.url = "github:Bircoder432/dwrs";
     dwrs.inputs.nixpkgs.follows = "nixpkgs";
     yamusic-tui-enhanced.url = "github:Bircoder432/yamusic-tui-enhanced";
@@ -20,6 +21,7 @@
       nixpkgs,
       home-manager,
       agenix,
+      osatui,
       ...
     }@inputs:
     {

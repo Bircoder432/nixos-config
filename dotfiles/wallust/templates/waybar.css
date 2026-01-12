@@ -28,7 +28,7 @@
     background: @bg;
     border-radius: 8px;
     border: 2px solid @accent;
-    
+
 }
 
 window#waybar {
@@ -52,6 +52,7 @@ window#waybar {
 #pulseaudio,
 #custom-keyboard,
 #custom-media,
+#custom-lessons,
 #network {
     background: transparent;
     margin: 0 4px;

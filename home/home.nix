@@ -13,22 +13,26 @@
     ./helix.nix
     ./git.nix
     ./dwrs.nix
-    ./yamusic-tui-enhanced.nix
+    ./osatui.nix
+    # NOT WORKED   ./yamusic-tui-enhanced.nix
   ];
   home.username = "vstor";
-  
+
   home.packages = with pkgs; [
     agenix-cli
     fastfetch
     fish
+    pandoc
     rustup
     zig
     gcc
     nodejs_24
     bun
+    #    logseq
     vue-language-server
     typescript-language-server
     typescript
+    libresprite
     tree
     fd
     zed-editor
@@ -59,7 +63,28 @@
     wev
     go
     onlyoffice-desktopeditors
+    (pkgs.writeShellScriptBin "lessons" ''
+      #!/usr/bin/env bash
+
+      GROUP_ID=161
+      API="https://api.thisishyum.ru/schedule_api/tyumen"
+
+      ${pkgs.curl}/bin/curl -s "$API/groups/$GROUP_ID/schedules?day=today" |
+      ${pkgs.jq}/bin/jq -r '
+        if length == 0 then
+          "Нет пар"
+        else
+          (
+            .[0].lessons | min_by(.order) | .startTime | .[0:5]
+          ) + "–" +
+          (
+            .[0].lessons | max_by(.order) | .endTime | .[0:5]
+          )
+        end
+      '
+    '')
   ];
+
   home.file.".config" = {
     source = ../dotfiles;
     recursive = true;
@@ -72,7 +97,6 @@
     source = ../prismlauncher/Wallust;
     recursive = true;
   };
-
   services.kdeconnect.enable = true;
   home.stateVersion = "25.11";
 }

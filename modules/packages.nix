@@ -51,6 +51,7 @@
     noto-fonts-cjk-sans
     nerd-fonts.fira-code
     nerd-fonts.droid-sans-mono
+    corefonts
     nerd-fonts.noto
     nerd-fonts.hack
     nerd-fonts.iosevka
