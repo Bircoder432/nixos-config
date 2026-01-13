@@ -12,7 +12,8 @@
 
   services.displayManager.ly.enable = true;
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
+  xdg.portal.extraPortals = with pkgs; [ xdg-desktop-portal-gtk xdg-desktop-portal-wlr ];
+  xdg.portal.config.common.default = "gtk";
   virtualisation.docker.enable = true;
   services.flatpak.enable = true;
   programs.fish.enable = true;

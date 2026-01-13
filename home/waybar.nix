@@ -42,10 +42,10 @@
 
         modules-center = [
           "clock"
+          "custom/screencast"
         ];
 
         modules-right = [
-          "custom/lessons"
           "cava"
           "custom/media" # кастомный модуль media
           "custom/keyboard"
@@ -130,6 +130,14 @@
           exec = "/etc/profiles/per-user/vstor/bin/lessons";
           interval = 60;
           tooltip = false;
+        };
+
+        "custom/screencast" = {
+          format = "{}";
+          exec = "/etc/profiles/per-user/vstor/bin/screencast-status";
+          interval = 1;
+          tooltip = false;
+          on-click = "/etc/profiles/per-user/vstor/bin/screencast";
         };
 
         "custom/keyboard" = {

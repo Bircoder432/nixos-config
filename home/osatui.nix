@@ -6,9 +6,9 @@
 }:
 
 {
-  imports = [ inputs.osatui.homeManagerModules.osatui ];
-  osatui.enable = true;
-  osatui.config = {
+  imports = [ inputs.osatui.homeManagerModules.x86_64-linux.osatui ];
+  programs.osatui.enable = true;
+  programs.osatui.config = {
     api = {
       url = "https://api.thisishyum.ru/schedule_api/tyumen";
       college_id = 1;
@@ -20,6 +20,21 @@
       cache_enabled = true;
       cache_ttl = 1800;
       current_theme = "dark";
+    };
+    keymap = {
+      prev_day = "Left";
+      cur_day = "Up";
+      next_day = "Right";
+
+      selector = {
+        Char = "o";
+      };
+      settings = {
+        Char = "s";
+      };
+      exit = {
+        Char = "q";
+      };
     };
   };
   home.packages = [

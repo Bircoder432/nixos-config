@@ -1,4 +1,5 @@
 {
+
   config,
   pkgs,
   lib,
@@ -13,29 +14,40 @@
     ./helix.nix
     ./git.nix
     ./dwrs.nix
-    ./osatui.nix
-    # NOT WORKED   ./yamusic-tui-enhanced.nix
   ];
   home.username = "vstor";
 
   home.packages = with pkgs; [
-    agenix-cli
     fastfetch
     fish
     pandoc
     rustup
+    trash-cli
+    rmtrash
+    zoxide
+    bat
+    ripgrep
+    fzf
+    dust
     zig
     gcc
     nodejs_24
+    wf-recorder
     bun
-    #    logseq
+    gradle
+    gradle-completion
+    kotlin-language-server
+    kotlin
+    zathura
+    zed-editor
+    logseq
     vue-language-server
     typescript-language-server
     typescript
     libresprite
     tree
     fd
-    zed-editor
+    nmap
     helix
     musicpod
     tmux
@@ -45,6 +57,10 @@
     nixd
     termusic
     obs-studio
+    obs-studio-plugins.obs-gstreamer
+    obs-studio-plugins.obs-vkcapture
+    obs-studio-plugins.wlrobs
+    obs-studio-plugins.obs-vaapi
     prismlauncher
     luanti
     xonotic
@@ -59,8 +75,6 @@
     oreo-cursors-plus
     zrythm
     typst
-    evans
-    wev
     go
     onlyoffice-desktopeditors
     (pkgs.writeShellScriptBin "lessons" ''
@@ -83,6 +97,39 @@
         end
       '
     '')
+
+    (pkgs.writeShellScriptBin "screencast" ''
+      #!/usr/bin/env bash
+
+      PID_FILE="/tmp/wf-recorder.pid"
+      OUTDIR="$HOME/Videos/screencasts"
+      mkdir -p "$OUTDIR"
+      FILENAME="cast_$(date +%Y%m%d_%H%M%S).mp4"
+
+      if [ -f "$PID_FILE" ] && kill -0 "$(cat "$PID_FILE")" 2>/dev/null; then
+          # Остановить запись
+          kill -SIGINT "$(cat "$PID_FILE")"
+          rm -f "$PID_FILE"
+          notify-send "Скринкаст завершен" "$FILENAME сохранен"
+      else
+          # Запустить запись
+          wf-recorder -f "$OUTDIR/$FILENAME" -a &
+          echo $! > "$PID_FILE"
+          notify-send "Скринкаст запущен"
+      fi
+      '')
+
+    (pkgs.writeShellScriptBin "screencast-status" ''
+        #!/usr/bin/env bash
+
+        PID_FILE="/tmp/wf-recorder.pid"
+
+        if [ -f "$PID_FILE" ] && kill -0 $(cat $PID_FILE) 2>/dev/null; then
+          echo "REC"
+        else
+          echo ""
+        fi
+      '')
   ];
 
   home.file.".config" = {

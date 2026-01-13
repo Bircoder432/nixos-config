@@ -24,7 +24,7 @@ gtk4.dst = "~/.themes/Wallust/gtk-4.0/gtk.css"
 prism.src = "prism.json"
 prism.dst = "~/.local/share/PrismLauncher/themes/Wallust/theme.json"
 btop.src = "btop.theme"
-btop.dst = "~/.config/btop/theme/wallust.theme"
+btop.dst = "~/.config/btop/themes/wallust.theme"
 
 [templates.cava]
 src = "cava.toml"

@@ -13,6 +13,7 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    vulkan-tools
     firefox
     fuzzel
     alacritty
@@ -22,6 +23,7 @@
     pavucontrol
     mako
     gnome-keyring
+    xdg-desktop-portal-wlr
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
     kdePackages.polkit-kde-agent-1

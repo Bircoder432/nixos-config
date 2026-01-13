@@ -43,6 +43,11 @@
     fsType = "ext4";
   };
 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   swapDevices = [
     { device = "/dev/disk/by-uuid/ddcb07d2-12eb-4290-8bf4-e3427379bff8"; }
   ];
