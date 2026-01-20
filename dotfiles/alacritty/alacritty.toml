@@ -4,13 +4,13 @@ import = [
 ]
 
 [font]
-normal.family = "JetBrains Mono"
+normal.family = "JetBrains Mono Nerd Font"
 normal.style = "Medium"
 
-bold.family = "JetBrains Mono"
+bold.family = "JetBrains Mono Nerd Font"
 bold.style = "Bold"
 
-italic.family = "JetBrains Mono"
+italic.family = "JetBrains Mono Nerd Font"
 italic.style = "Italic"
 
 size = 11.0

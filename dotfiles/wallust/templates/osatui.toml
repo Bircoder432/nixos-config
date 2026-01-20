@@ -1,0 +1,9 @@
+[dark]
+background   = "{{background}}"
+text         = "{{foreground}}"
+header_bg    = "{{color4}}"
+header_fg    = "{{background}}"
+table_header = "{{color2}}"
+border       = "{{color4}}"
+highlight    = "{{color4}}"
+

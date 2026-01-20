@@ -231,7 +231,7 @@ binds {
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+W { toggle-column-tabbed-display; }
     Print { screenshot; }
-    Mod+X { spawn-sh "/etc/profiles/per-user/vstor/bin/screencast"; }
+    Mod+X hotkey-overlay-title="Toggle screencast" { spawn-sh "/etc/profiles/per-user/vstor/bin/screencast"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }

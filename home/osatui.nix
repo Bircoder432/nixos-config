@@ -8,7 +8,8 @@
 {
   imports = [ inputs.osatui.homeManagerModules.x86_64-linux.osatui ];
   programs.osatui.enable = true;
-  programs.osatui.config = {
+  programs.osatui.package = inputs.osatui.packages.${pkgs.system}.osatui;
+  programs.osatui.settings = {
     api = {
       url = "https://api.thisishyum.ru/schedule_api/tyumen";
       college_id = 1;
@@ -37,7 +38,4 @@
       };
     };
   };
-  home.packages = [
-    inputs.osatui.defaultPackage
-  ];
 }

@@ -11,13 +11,12 @@
 /* ---------- Base ---------- */
 
 * {
-    font-family: "JetBrainsMono", "Font Awesome 6 Free";
+    font-family: "JetBrainsMono", "Symbols Nerd Font", monospace;
     font-size: 14px;
     font-weight: 700;
 
     color: @fg;
     background: transparent;
-
     border: none;
     padding: 2px 6px;
 }
@@ -81,13 +80,17 @@ window#waybar {
 
 #workspaces button:hover {
     background: @bg;
-    color: @fg;
+    color: @bg;
 }
 
 #workspaces button.focused {
     background: @accent;
     color: @bg;
     font-weight: 600;
+}
+
+#workspaces button.active {
+    color: @bg;
 }
 
 #workspaces button.urgent {

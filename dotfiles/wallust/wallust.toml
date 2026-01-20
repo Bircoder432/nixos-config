@@ -25,6 +25,8 @@ prism.src = "prism.json"
 prism.dst = "~/.local/share/PrismLauncher/themes/Wallust/theme.json"
 btop.src = "btop.theme"
 btop.dst = "~/.config/btop/themes/wallust.theme"
+osatui.src = "osatui.toml"
+osatui.dst = "~/.config/osatui/theme.toml"
 
 [templates.cava]
 src = "cava.toml"

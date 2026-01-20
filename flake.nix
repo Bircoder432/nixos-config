@@ -9,8 +9,10 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixi.url = "path:/home/vstor/Projects/nixi"
     awww.url = "git+https://codeberg.org/LGFae/awww";
-# NOT WORK    osatui.url = "github:Bircoder432/osatui";
+    osatui.url = "path:/home/vstor/Projects/osatui";
+    rustormy.url = "path:/home/vstor/Projects/rustormy";
     dwrs.url = "github:Bircoder432/dwrs";
     dwrs.inputs.nixpkgs.follows = "nixpkgs";
     yamusic-tui-enhanced.url = "github:Bircoder432/yamusic-tui-enhanced";
@@ -21,7 +23,6 @@
       self,
       nixpkgs,
       home-manager,
-      agenix,
 # NOT WORK      osatui,
       ...
     }@inputs:

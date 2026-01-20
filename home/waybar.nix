@@ -59,6 +59,10 @@
         # Настройки модулей
         # -------------------
 
+        "niri/window" = {
+          max-length = 45;
+        };
+        
         cava = {
           framerate = 30;
           autosens = 1;
@@ -96,7 +100,7 @@
         # Pulseaudio
         pulseaudio = {
           format = " {volume}%"; #  — динамик Nerd Font
-          format-muted = " mute";
+          format-muted = "󰝟 mute";
           scroll-step = 5;
         };
 
@@ -116,9 +120,10 @@
         # -------------------
 
         "custom/media" = {
-          format = "♪ {}"; #  — музыка
+          format = " {}"; #  — музыка
           tooltip = "Media player info";
           exec = "${pkgs.playerctl}/bin/playerctl metadata --format '{{title}} - {{artist}}'";
+          max-length = 45;
           interval = 1;
           on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
           on-scroll-up = "${pkgs.playerctl}/bin/playerctl next";

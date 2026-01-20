@@ -13,6 +13,8 @@
   environment.systemPackages = with pkgs; [
     wget
     git
+    tuigreet
+    greetd
     vulkan-tools
     firefox
     fuzzel
@@ -54,6 +56,8 @@
     nerd-fonts.fira-code
     nerd-fonts.droid-sans-mono
     corefonts
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.symbols-only
     nerd-fonts.noto
     nerd-fonts.hack
     nerd-fonts.iosevka
