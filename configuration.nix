@@ -15,6 +15,10 @@
     "nix-command"
     "flakes"
   ];
+  
+  console = {
+    font = "cyr-sun16";
+  };
 
   nix.gc = {
     automatic = true;

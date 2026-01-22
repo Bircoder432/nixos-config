@@ -30,7 +30,7 @@ input {
 }
 
 cursor {
-    xcursor-theme "oreo-cursors-plus"
+    xcursor-theme "Future-dark-cursors"
     xcursor-size 32
 }
 
@@ -191,8 +191,6 @@ binds {
     Mod+Shift+WheelScrollUp        { focus-column-left; }
     Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
-    Mod+S { consume-window-into-column; }
-    Mod+Shift+S { expel-window-from-column; }
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
     Mod+3 { focus-workspace 3; }
@@ -238,4 +236,8 @@ binds {
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
     Mod+Shift+P { power-off-monitors; }
+    Mod+Alt+Down { set-window-height "-25"; }
+    Mod+Alt+Up { set-window-height "+25"; }
+    Mod+Alt+Right { set-window-width "+25"; }
+    Mod+Alt+Left { set-window-width "-25"; } 
 }

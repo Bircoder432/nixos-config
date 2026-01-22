@@ -2,16 +2,23 @@
 
 {
   home.packages = with pkgs; [
-    android-studio # proprietary shit
+    android-studio
     android-tools
     fastfetch
+    wine
     fish
     pandoc
+    inkscape
+    qalculate-gtk
+    libqalculate
+    vscode-css-languageserver
+    superhtml
     rustup
     marktext
     ffmpeg-full
     element-desktop
     trash-cli
+    joplin-desktop
     rmtrash
     zoxide
     eza

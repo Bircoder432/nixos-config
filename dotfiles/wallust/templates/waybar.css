@@ -3,39 +3,43 @@
    ================================ */
 
 @define-color bg {{ background }};
+
 @define-color fg {{ foreground }};
+
 @define-color accent {{ color4 }};
+
 @define-color warn {{ color1 }};
+
 @define-color muted {{ color8 }};
 
 /* ---------- Base ---------- */
 
 * {
-    font-family: "JetBrainsMono", "Symbols Nerd Font", monospace;
-    font-size: 14px;
-    font-weight: 700;
+  font-family: "JetBrainsMono", "Symbols Nerd Font", monospace;
+  font-size: 14px;
+  font-weight: 700;
 
-    color: @fg;
-    background: transparent;
-    border: none;
-    padding: 2px 6px;
+  color: @fg;
+  background: transparent;
+  border: none;
+  padding: 2px 6px;
 }
 
 /* ---------- Bar ---------- */
 
 #waybar {
-    background: @bg;
-    border-radius: 8px;
-    border: 2px solid @accent;
+  background: @bg;
+  border-radius: 8px;
+  border: 2px solid @accent;
 
 }
 
 window#waybar {
-    background: @bg;
-    border-radius: 8px;
+  background: @bg;
+  border-radius: 8px;
 
-    padding: 2px 4px;
-    border: 2px solid @accent;
+  padding: 2px 4px;
+  border: 2px solid @accent;
 }
 
 /* ---------- Module groups ---------- */
@@ -43,10 +47,10 @@ window#waybar {
 #workspaces,
 #waybar-niri-window,
 #windows,
-#cava
-#clock {
-    font-weight: bold;
+#cava #clock {
+  font-weight: bold;
 }
+
 #tray,
 #pulseaudio,
 #custom-keyboard,
@@ -54,82 +58,81 @@ window#waybar {
 #custom-lessons,
 #custom-screencast,
 #network {
-    background: transparent;
-    margin: 0 4px;
-    padding: 1px 4px;
-    border-radius: 8px;
+  background: transparent;
+  margin: 0 4px;
+  padding: 1px 4px;
+  border-radius: 8px;
 }
 
 /* ---------- Workspaces ---------- */
 #workspaces {
-    background: transparent;
-    border: @accent;
-    border-radius: 6px;
-    margin: 0 1px;
+  background: transparent;
+  border: @accent;
+  border-radius: 6px;
+  margin: 0 1px;
 }
 
 #workspaces button {
-    background: transparent;
-    color: @muted;
-    border: @accent;
-    margin: 0 1px;
-    padding: 1px 6px;
-    border-radius: 6px;
-    transition: background-color 120ms ease, color 120ms ease;
+  background: transparent;
+  border: @accent;
+  margin: 0 1px;
+  padding: 1px 6px;
+  border-radius: 6px;
+  transition: background-color 120ms ease, color 120ms ease;
 }
 
 #workspaces button:hover {
-    background: @bg;
-    color: @bg;
+  background: @bg;
+  color: @bg;
 }
 
 #workspaces button.focused {
-    background: @accent;
-    color: @bg;
-    font-weight: 600;
+  background: @accent;
+  color: @bg;
+  font-weight: 600;
 }
 
 #workspaces button.active {
-    color: @bg;
+  color: @bg;
 }
 
 #workspaces button.urgent {
-    background: @warn;
-    color: @bg;
-    font-weight: 600;
+  background: @warn;
+  color: @bg;
+  font-weight: 600;
 }
 
 /* ---------- Window title ---------- */
 
 #waybar-niri-window {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 /* ---------- Clock ---------- */
 
 #clock {
-    color: @accent;
-    font-weight: 600;
+  color: @accent;
+  font-weight: 600;
 }
 
 /* ---------- Audio ---------- */
 
 #pulseaudio.muted {
-    color: @muted;
+  color: @muted;
 }
 
 /* ---------- Tray ---------- */
 
-#tray > .needs-attention {
-    background: @warn;
-    color: @bg;
+#tray>.needs-attention {
+  background: @warn;
+  color: @bg;
 }
 
 /* ---------- Tooltip ---------- */
 
 tooltip {
-    background: @bg;
-    color: @fg;
-    border-radius: 8px;
-    padding: 6px;
+  background: @bg;
+  color: @fg;
+  border-radius: 8px;
+  padding: 6px;
 }

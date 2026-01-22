@@ -20,7 +20,7 @@ in
     alsa.support32Bit = true;
     wireplumber.enable = true;
   };
-  #services.displayManager.ly.enable = true;
+
  services.greetd = {
     enable = true;
     useTextGreeter = true;
@@ -34,6 +34,7 @@ in
   xdg.portal.enable = true;
   xdg.portal.extraPortals = with pkgs; [ xdg-desktop-portal-gtk xdg-desktop-portal-gnome  xdg-desktop-portal-wlr ];
   xdg.portal.config.common.default = "gnome";
+  virtualisation.waydroid.enable = true;
   virtualisation.docker.enable = true;
   services.flatpak.enable = true;
   programs.fish.enable = true;

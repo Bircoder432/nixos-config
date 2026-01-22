@@ -19,6 +19,7 @@
           select = "underline";
         };
       };
+  
       keys.normal = {
         space.space = "file_picker";
         space.w = ":w";

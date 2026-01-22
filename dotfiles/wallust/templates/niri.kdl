@@ -19,5 +19,5 @@ layout {
 }
 
 overview {
-    backdrop-color "{{ background }}"
+    backdrop-color "{{ color4 | darken(0.5) }}"
 }

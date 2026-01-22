@@ -16,7 +16,7 @@
     ./packages.nix
     ./rustormy.nix
     ./osatui.nix
-    ./nixi.nix
+
   ];
   home.username = "vstor";
 

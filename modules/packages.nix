@@ -13,7 +13,8 @@
   environment.systemPackages = with pkgs; [
     wget
     git
-    tuigreet
+#    tuigreet
+    regreet
     greetd
     vulkan-tools
     firefox
